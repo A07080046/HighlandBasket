@@ -11,6 +11,19 @@
   		<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
    		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
    		 -->
+   		<script>
+			function addCell()
+			{
+				for (var i=0;i<5;i++) {
+					
+					var x=document.getElementById('comeon');
+					var y=document.getElementById('goods1');
+					var para=document.createElement();
+					para = y;
+					x.appendChild(para);
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -23,7 +36,7 @@
 						<div class="nav-collapse collapse navbar-responsive-collapse">
 							<ul class="nav">
 								<li class="active">
-									<a href="#">主页</a>
+									<a href="#" onclick ="addCell()" >主页</a>
 								</li>
 								<li>
 									<a href="#">鲜蔬</a>
@@ -137,13 +150,13 @@
         <h2>热购推荐</h2>
         <p>下商品为新鲜绿色国蔬，收广大消费者喜爱，推荐给大家</p>
       </div>
-			<div class="row">
-		      	<div class="span2">
+			<div class="row" id="comeon">
+		      	<div class="span2" id="goods1">
 		          <div class="thumbnail">
 		            <a href="http://codeguide.bootcss.com" title="Bootstrap 编码规范" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'codeguide'])"><img class="lazy" src="img/4.jpg" width="300" height="150" data-src="http://static.bootcss.com/www/assets/img/codeguide.png" alt="Headroom.js"></a>
 		            <div class="caption">
 		              <h3> 
-		                <a href="http://codeguide.bootcss.com" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'codeguide'])">大白菜<br><small>贵州大山生长</small></a>
+		                <a href="http://codeguide.bootcss.com" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'codeguide'])">大豆芽<br><small>贵州大山生长</small></a>
 		              </h3>
 		              <p>
 		              大山里种的，没用农业，常年非大棚种植，欢迎选购。
@@ -151,7 +164,7 @@
 		            </div>
 		          </div>
 		        </div>
-		      	<div class="span2">
+		      	<div class="span2" id="goods2">
 		          <div class="thumbnail">
 		            <a href="http://codeguide.bootcss.com" title="Bootstrap 编码规范" target="_blank" onclick="_hmt.push(['_trackEvent', 'tile', 'click', 'codeguide'])"><img class="lazy" src="img/4.jpg" width="300" height="150" data-src="http://static.bootcss.com/www/assets/img/codeguide.png" alt="Headroom.js"></a>
 		            <div class="caption">
@@ -298,7 +311,7 @@
 	</div>
 	<div class="row-fluid">
 		<div class="span12">
-			 <address> <strong>弘毅科技</strong><br />贵州省六枝特区岩脚镇<br />贵州 中国<br /> <abbr title="Phone">电话:</abbr> 18684165865</address>
+			 <address> <strong>弘毅科技</strong><br />贵州省某某市某某县某某镇某某村<br />贵州 中国<br /> <abbr title="Phone">电话:</abbr> 18688888888</address>
 		</div>
 	</div>
 </div>
