@@ -12,31 +12,27 @@ function clickHomePage()
 
 function clickVegetable()
 {
-
-
+    window.open("./html/goodsDetail.html");
 }
 
 function clickFreshFruit()
 {
-
-
+    window.open("./html/goodsOrder.html");
 }
 
 function clickFreshMeat()
 {
-
-
+    window.open("./html/logistics.html");
 }
 
 function clickNut()
 {
-
-
+    window.open("./html/register.html");
 }
 
 function clickWildHerbs()
 {
-
+    window.open("./html/shoppingTrolley.html");
 
 }
 
@@ -52,10 +48,6 @@ function clickGame()
 
 }
 
-function clickSearch()
-{
-
-}
 
 function clickBasket()
 {
