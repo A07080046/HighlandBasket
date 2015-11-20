@@ -73,3 +73,27 @@ function clickLogin()
 {
 
 }
+
+/*商品数量+1*/
+function clickAdd(){
+    var num_add = parseInt(document.getElementById("quantity").value)+1;
+    if(document.getElementById("quantity").value ==""){
+        num_add = 1;
+    }
+    document.getElementById("quantity").value = num_add;
+    var total = parseFloat(document.getElementById("price").value)*parseInt(document.getElementById("quantity").value);
+    document.getElementById("totalPrice").innerHTML = total.toFixed(2);
+}
+
+/*商品数量-1*/
+function clickSub(){
+    var num_dec = parseInt(document.getElementById("quantity").value)-1;
+    if(num_dec<1){
+        //购买数量必须大于或等于1
+        alert("购买数量必须大于或等于1");
+    }else{
+        document.getElementById("quantity").value = num_dec;
+        var total = parseFloat(document.getElementById("price").value)*parseInt(document.getElementById("quantity").value);
+        document.getElementById("totalPrice").innerHTML = total.toFixed(2);
+    }
+}

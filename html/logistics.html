@@ -1,13 +1,20 @@
 <meta charset="utf-8">
+<!--<script src="../js/customFunctions.js"></script>-->
 <dev>
     <h1>我是商品物流页面</h1>
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span6">
-                <img alt="440x440" src="img/1.jpg" />
+                <img src="../img/4.jpg"/>
             </div>
-            <div class="span6">
-                <span class="label">数量：</span> <button class="btn" type="button">按钮</button>
+            <div class="pull-right">
+                <span onclick="clickSub()">-</span>
+                <input type="text" id="quantity" value="1"/>
+                <span onclick="clickAdd()">+</span>
+                <p class="">Total Price:
+                    <span id="totalPrice">28.10</span>
+                </p>
+                <input type="hidden" value="28.1" id="price" />
             </div>
         </div>
         <div class="row-fluid">
